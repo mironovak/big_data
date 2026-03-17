@@ -42,7 +42,18 @@ FROM user_logs u
 JOIN departments d ON u.Depart = d.id
 LIMIT 10;
 ```
+SELECT
+u.userid – берёт столбец userid из таблицы user_logs (сокращённо u). Это идентификатор пользователя.
 
+u.courseid – берёт столбец courseid из той же таблицы user_logs. Это идентификатор курса.
+
+d.name AS department_name – берёт столбец name из таблицы departments (сокращённо d). Это название кафедры. AS department_name означает, что в результате этот столбец будет называться department_name (просто для удобства чтения).
+
+FROM user_logs u
+Указывает, что основная таблица, из которой мы начинаем выборку, – user_logs. Ей даётся псевдоним u, чтобы в других частях запроса не писать полное имя таблицы каждый раз.
+
+JOIN departments d ON u.Depart = d.id
+Это внутреннее соединение (JOIN) с таблицей departments (псевдоним d). Оно добавляет к каждой строке из user_logs соответствующую строку из departments, где значение поля Depart в user_logs совпадает со значением поля id в departments.
 ## Очистка среды
 ```bash
 docker-compose down -v
