@@ -1,0 +1,241 @@
+[2026-04-28T18:15:15.023+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-04-28T18:15:15.045+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: create_student_performance_mart.create_mart manual__2026-04-28T18:14:13.339685+00:00 [queued]>
+[2026-04-28T18:15:15.056+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: create_student_performance_mart.create_mart manual__2026-04-28T18:14:13.339685+00:00 [queued]>
+[2026-04-28T18:15:15.057+0000] {taskinstance.py:2866} INFO - Starting attempt 2 of 2
+[2026-04-28T18:15:15.071+0000] {taskinstance.py:2889} INFO - Executing <Task(PostgresOperator): create_mart> on 2026-04-28 18:14:13.339685+00:00
+[2026-04-28T18:15:15.085+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=457) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-04-28T18:15:15.083+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'create_student_performance_mart', 'create_mart', 'manual__2026-04-28T18:14:13.339685+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/create_student_performance_mart.py', '--cfg-path', '/tmp/tmpr5r4luiy']
+[2026-04-28T18:15:15.087+0000] {standard_task_runner.py:72} INFO - Started process 458 to run task
+[2026-04-28T18:15:15.087+0000] {standard_task_runner.py:105} INFO - Job 5: Subtask create_mart
+[2026-04-28T18:15:15.156+0000] {task_command.py:467} INFO - Running <TaskInstance: create_student_performance_mart.create_mart manual__2026-04-28T18:14:13.339685+00:00 [running]> on host d94a9a62e587
+[2026-04-28T18:15:15.248+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='create_student_performance_mart' AIRFLOW_CTX_TASK_ID='create_mart' AIRFLOW_CTX_EXECUTION_DATE='2026-04-28T18:14:13.339685+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-28T18:14:13.339685+00:00'
+[2026-04-28T18:15:15.249+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-04-28T18:15:15.282+0000] {sql.py:278} INFO - Executing: 
+DROP SCHEMA IF EXISTS dmr CASCADE;
+CREATE SCHEMA dmr;
+
+CREATE TABLE dmr.analytics_student_performance (
+    student_id         INTEGER NOT NULL,
+    course_id          INTEGER NOT NULL,
+    department_id      INTEGER,
+    department_name    VARCHAR(255),
+    education_level    VARCHAR(255),
+    education_base     VARCHAR(255),
+    semester           INTEGER,
+    course_year        INTEGER,
+    final_grade        INTEGER,
+    total_events       INTEGER,
+    avg_weekly_events  DECIMAL(10,2),
+    total_course_views INTEGER,
+    total_quiz_views   INTEGER,
+    total_module_views INTEGER,
+    total_submissions  INTEGER,
+    peak_activity_week INTEGER,
+    consistency_score  DECIMAL(5,2),
+    activity_category  VARCHAR(50),
+    last_update        TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (student_id, course_id)
+);
+
+INSERT INTO dmr.analytics_student_performance 
+    (student_id, course_id, department_id, semester, course_year, final_grade)
+SELECT DISTINCT ON (userid, courseid) 
+    userid, courseid, Depart, Num_Sem, Kurs, NameR_Level
+FROM public.user_logs
+WHERE NameR_Level IS NOT NULL
+ORDER BY userid, courseid, num_week DESC
+ON CONFLICT (student_id, course_id) DO NOTHING;
+
+UPDATE dmr.analytics_student_performance AS target
+SET department_name = dict.name
+FROM public.departments dict
+WHERE target.department_id = dict.id;
+
+UPDATE dmr.analytics_student_performance AS target
+SET education_level = CASE CAST(source.LevelEd AS VARCHAR) 
+        WHEN '1' THEN 'бакалавриат' 
+        WHEN '2' THEN 'магистратура' 
+        ELSE 'иное' END,
+    education_base = CASE CAST(source.Name_OsnO AS VARCHAR) 
+        WHEN '1' THEN 'бюджет' 
+        WHEN '2' THEN 'контракт' 
+        ELSE 'иное' END
+FROM (
+    SELECT DISTINCT ON (userid, courseid) userid, courseid, LevelEd, Name_OsnO 
+    FROM public.user_logs
+) source
+WHERE target.student_id = source.userid AND target.course_id = source.courseid;
+
+UPDATE dmr.analytics_student_performance target
+SET total_events = source.t_events,
+    total_course_views = source.t_course,
+    total_quiz_views = source.t_quiz,
+    total_module_views = source.t_module,
+    total_submissions = source.t_sub
+FROM (
+    SELECT userid, courseid, 
+           SUM(s_all) as t_events,
+           SUM(s_course_viewed) as t_course,
+           SUM(s_q_attempt_viewed) as t_quiz,
+           SUM(s_a_course_module_viewed) as t_module,
+           SUM(s_a_submission_status_viewed) as t_sub
+    FROM public.user_logs
+    GROUP BY userid, courseid
+) as source
+WHERE target.student_id = source.userid AND target.course_id = source.courseid;
+
+UPDATE dmr.analytics_student_performance AS target
+SET avg_weekly_events = ROUND(CAST(target.total_events AS NUMERIC) / NULLIF(source.week_count, 0), 2)
+FROM (
+    SELECT userid, courseid, COUNT(DISTINCT num_week) AS week_count 
+    FROM public.user_logs 
+    GROUP BY userid, courseid
+) AS source
+WHERE target.student_id = source.userid 
+  AND target.course_id = source.courseid;
+
+WITH RankedWeeks AS (
+    SELECT userid, courseid, num_week, 
+           ROW_NUMBER() OVER (PARTITION BY userid, courseid ORDER BY s_all DESC) AS rn 
+    FROM public.user_logs
+)
+UPDATE dmr.analytics_student_performance AS target
+SET peak_activity_week = source.num_week
+FROM RankedWeeks AS source
+WHERE source.rn = 1
+  AND target.student_id = source.userid 
+  AND target.course_id = source.courseid;
+
+UPDATE dmr.analytics_student_performance AS target
+SET consistency_score = ROUND(CAST(source.act_weeks AS NUMERIC) / NULLIF(source.tot_weeks, 0), 2)
+FROM (
+    SELECT userid, courseid, 
+           COUNT(DISTINCT num_week) AS tot_weeks, 
+           COUNT(DISTINCT CASE WHEN s_all > 0 THEN num_week END) AS act_weeks 
+    FROM public.user_logs 
+    GROUP BY userid, courseid
+) AS source
+WHERE target.student_id = source.userid 
+  AND target.course_id = source.courseid;
+
+WITH ActivityRanks AS (
+    SELECT student_id, course_id, 
+           PERCENT_RANK() OVER (ORDER BY total_events) AS pr 
+    FROM dmr.analytics_student_performance
+)
+UPDATE dmr.analytics_student_performance AS target
+SET activity_category = CASE 
+        WHEN source.pr <= 0.25 THEN 'низкая' 
+        WHEN source.pr <= 0.75 THEN 'средняя' 
+        ELSE 'высокая' 
+    END
+FROM ActivityRanks AS source
+WHERE target.student_id = source.student_id 
+  AND target.course_id = source.course_id;
+[2026-04-28T18:15:15.303+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/operators/sql.py", line 279, in execute
+    hook = self.get_db_hook()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/operators/sql.py", line 190, in get_db_hook
+    return self._hook
+           ^^^^^^^^^^
+  File "/usr/local/lib/python3.12/functools.py", line 995, in __get__
+    val = self.func(instance)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/operators/sql.py", line 166, in _hook
+    hook = self.get_hook(conn_id=conn_id, hook_params=self.hook_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/operators/sql.py", line 158, in get_hook
+    connection = BaseHook.get_connection(conn_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/hooks/base.py", line 83, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/connection.py", line 537, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgres_default` isn't defined
+[2026-04-28T18:15:15.309+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=create_student_performance_mart, task_id=create_mart, run_id=manual__2026-04-28T18:14:13.339685+00:00, execution_date=20260428T181413, start_date=20260428T181515, end_date=20260428T181515
+[2026-04-28T18:15:15.321+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-04-28T18:15:15.322+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 5 for task create_mart (The conn_id `postgres_default` isn't defined; 458)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/operators/sql.py", line 279, in execute
+    hook = self.get_db_hook()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/operators/sql.py", line 190, in get_db_hook
+    return self._hook
+           ^^^^^^^^^^
+  File "/usr/local/lib/python3.12/functools.py", line 995, in __get__
+    val = self.func(instance)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/operators/sql.py", line 166, in _hook
+    hook = self.get_hook(conn_id=conn_id, hook_params=self.hook_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/operators/sql.py", line 158, in get_hook
+    connection = BaseHook.get_connection(conn_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/hooks/base.py", line 83, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/connection.py", line 537, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgres_default` isn't defined
+[2026-04-28T18:15:15.343+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2026-04-28T18:15:15.360+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-04-28T18:15:15.364+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
