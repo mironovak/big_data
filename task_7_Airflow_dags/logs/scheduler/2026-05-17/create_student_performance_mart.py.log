@@ -1,0 +1,7 @@
+[2026-05-17T11:36:58.391+0000] {processor.py:186} INFO - Started process (PID=176) to work on /opt/airflow/dags/create_student_performance_mart.py
+[2026-05-17T11:36:58.393+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_student_performance_mart.py for tasks to queue
+[2026-05-17T11:36:58.396+0000] {logging_mixin.py:190} INFO - [2026-05-17T11:36:58.395+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_student_performance_mart.py
+[2026-05-17T11:36:58.420+0000] {processor.py:925} INFO - DAG(s) 'create_student_performance_mart' retrieved from /opt/airflow/dags/create_student_performance_mart.py
+[2026-05-17T11:36:58.463+0000] {logging_mixin.py:190} INFO - [2026-05-17T11:36:58.463+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-05-17T11:36:58.484+0000] {logging_mixin.py:190} INFO - [2026-05-17T11:36:58.484+0000] {dag.py:4180} INFO - Setting next_dagrun for create_student_performance_mart to None, run_after=None
+[2026-05-17T11:36:58.510+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_student_performance_mart.py took 0.126 seconds

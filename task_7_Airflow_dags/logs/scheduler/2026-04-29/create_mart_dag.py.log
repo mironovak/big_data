@@ -1,0 +1,518 @@
+[2026-04-29T05:10:31.899+0000] {processor.py:186} INFO - Started process (PID=179) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:10:31.900+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:10:31.903+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:10:31.903+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:10:31.938+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:10:31.977+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:10:31.976+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:10:32.007+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:10:32.007+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:10:32.028+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.137 seconds
+[2026-04-29T05:11:03.062+0000] {processor.py:186} INFO - Started process (PID=195) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:11:03.064+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:11:03.068+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:11:03.067+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:11:03.121+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:11:03.165+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:11:03.164+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:11:03.206+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:11:03.205+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:11:03.235+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.184 seconds
+[2026-04-29T05:11:33.678+0000] {processor.py:186} INFO - Started process (PID=211) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:11:33.680+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:11:33.684+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:11:33.683+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:11:33.735+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:11:33.781+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:11:33.780+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:11:33.831+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:11:33.831+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:11:33.877+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.209 seconds
+[2026-04-29T05:12:04.399+0000] {processor.py:186} INFO - Started process (PID=227) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:12:04.401+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:12:04.404+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:12:04.403+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:12:04.444+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:12:04.480+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:12:04.480+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:12:04.511+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:12:04.510+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:12:04.533+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.141 seconds
+[2026-04-29T05:12:34.814+0000] {processor.py:186} INFO - Started process (PID=243) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:12:34.815+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:12:34.818+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:12:34.818+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:12:34.857+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:12:34.886+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:12:34.885+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:12:34.914+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:12:34.914+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:12:34.934+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.129 seconds
+[2026-04-29T05:13:05.322+0000] {processor.py:186} INFO - Started process (PID=259) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:13:05.324+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:13:05.328+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:13:05.327+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:13:05.384+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:13:05.429+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:13:05.428+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:13:05.472+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:13:05.471+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:13:05.507+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.196 seconds
+[2026-04-29T05:13:35.681+0000] {processor.py:186} INFO - Started process (PID=275) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:13:35.684+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:13:35.687+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:13:35.687+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:13:35.744+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:13:35.791+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:13:35.791+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:13:35.828+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:13:35.828+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:13:35.853+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.185 seconds
+[2026-04-29T05:14:06.238+0000] {processor.py:186} INFO - Started process (PID=291) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:14:06.240+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:14:06.244+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:14:06.244+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:14:06.301+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:14:06.351+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:14:06.351+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:14:06.393+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:14:06.392+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:14:06.424+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.197 seconds
+[2026-04-29T05:14:36.607+0000] {processor.py:186} INFO - Started process (PID=307) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:14:36.609+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:14:36.613+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:14:36.612+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:14:36.659+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:14:36.700+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:14:36.700+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:14:36.740+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:14:36.740+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:14:36.769+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.172 seconds
+[2026-04-29T05:15:07.165+0000] {processor.py:186} INFO - Started process (PID=323) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:15:07.167+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:15:07.171+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:15:07.171+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:15:07.225+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:15:07.268+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:15:07.268+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:15:07.309+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:15:07.308+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:15:07.340+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.186 seconds
+[2026-04-29T05:15:37.852+0000] {processor.py:186} INFO - Started process (PID=340) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:15:37.854+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:15:37.857+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:15:37.857+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:15:37.913+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:15:37.962+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:15:37.961+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:15:38.003+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:15:38.003+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:15:38.033+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.191 seconds
+[2026-04-29T05:16:08.378+0000] {processor.py:186} INFO - Started process (PID=356) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:16:08.380+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:16:08.385+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:16:08.384+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:16:08.427+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:16:08.471+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:16:08.470+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:16:08.509+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:16:08.509+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:16:08.539+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.172 seconds
+[2026-04-29T05:16:38.763+0000] {processor.py:186} INFO - Started process (PID=372) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:16:38.766+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:16:38.772+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:16:38.771+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:16:38.823+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:16:38.879+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:16:38.879+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:16:38.917+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:16:38.917+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:16:38.945+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.196 seconds
+[2026-04-29T05:17:09.320+0000] {processor.py:186} INFO - Started process (PID=388) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:17:09.321+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:17:09.325+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:17:09.325+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:17:09.367+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:17:09.411+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:17:09.410+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:17:09.452+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:17:09.452+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:17:09.481+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.172 seconds
+[2026-04-29T05:17:39.826+0000] {processor.py:186} INFO - Started process (PID=404) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:17:39.828+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:17:39.833+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:17:39.832+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:17:39.871+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:17:39.915+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:17:39.914+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:17:39.953+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:17:39.953+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:17:39.983+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.166 seconds
+[2026-04-29T05:18:26.979+0000] {processor.py:186} INFO - Started process (PID=420) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:18:26.995+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:18:27.000+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:18:26.999+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:18:27.034+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:18:27.070+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:18:27.069+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:18:27.100+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:18:27.100+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:18:27.125+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.158 seconds
+[2026-04-29T05:18:57.536+0000] {processor.py:186} INFO - Started process (PID=436) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:18:57.538+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:18:57.543+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:18:57.542+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:18:57.584+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:18:57.628+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:18:57.627+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:18:57.667+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:18:57.667+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:18:57.697+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.170 seconds
+[2026-04-29T05:19:27.908+0000] {processor.py:186} INFO - Started process (PID=452) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:19:27.911+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:19:27.916+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:19:27.916+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:19:27.966+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:19:28.019+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:19:28.019+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:19:28.060+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:19:28.060+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:19:28.094+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.198 seconds
+[2026-04-29T05:19:58.460+0000] {processor.py:186} INFO - Started process (PID=468) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:19:58.462+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:19:58.466+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:19:58.465+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:19:58.509+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:19:58.561+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:19:58.560+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:19:58.615+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:19:58.614+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:19:58.649+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.201 seconds
+[2026-04-29T05:20:29.034+0000] {processor.py:186} INFO - Started process (PID=484) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:20:29.036+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:20:29.040+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:20:29.040+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:20:29.081+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:20:29.128+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:20:29.128+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:20:29.166+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:20:29.166+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:20:29.197+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.174 seconds
+[2026-04-29T05:20:59.738+0000] {processor.py:186} INFO - Started process (PID=499) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:20:59.739+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:20:59.743+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:20:59.743+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:20:59.785+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:20:59.828+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:20:59.828+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:20:59.868+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:20:59.868+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:20:59.897+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.170 seconds
+[2026-04-29T05:21:30.280+0000] {processor.py:186} INFO - Started process (PID=515) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:21:30.282+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:21:30.286+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:21:30.286+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:21:30.326+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:21:30.371+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:21:30.370+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:21:30.409+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:21:30.408+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:21:30.437+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.167 seconds
+[2026-04-29T05:22:00.799+0000] {processor.py:186} INFO - Started process (PID=531) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:22:00.800+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:22:00.804+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:22:00.804+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:22:00.843+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:22:00.892+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:22:00.892+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:22:00.934+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:22:00.934+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:22:00.964+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.174 seconds
+[2026-04-29T05:22:31.420+0000] {processor.py:186} INFO - Started process (PID=547) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:22:31.422+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:22:31.427+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:22:31.426+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:22:31.470+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:22:31.517+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:22:31.516+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:22:31.557+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:22:31.557+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:22:31.587+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.176 seconds
+[2026-04-29T05:23:02.004+0000] {processor.py:186} INFO - Started process (PID=563) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:23:02.008+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:23:02.015+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:23:02.014+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:23:02.067+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:23:02.116+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:23:02.115+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:23:02.165+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:23:02.165+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:23:02.205+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.222 seconds
+[2026-04-29T05:23:32.643+0000] {processor.py:186} INFO - Started process (PID=579) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:23:32.645+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:23:32.650+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:23:32.649+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:23:32.694+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:23:32.745+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:23:32.744+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:23:32.792+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:23:32.792+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:23:32.826+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.196 seconds
+[2026-04-29T05:24:03.176+0000] {processor.py:186} INFO - Started process (PID=595) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:24:03.178+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:24:03.183+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:24:03.183+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:24:03.232+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:24:03.297+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:24:03.296+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:24:03.340+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:24:03.339+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:24:03.372+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.208 seconds
+[2026-04-29T05:24:33.728+0000] {processor.py:186} INFO - Started process (PID=611) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:24:33.730+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:24:33.734+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:24:33.734+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:24:33.782+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:24:33.827+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:24:33.827+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:24:33.865+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:24:33.865+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:24:33.894+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.178 seconds
+[2026-04-29T05:25:04.257+0000] {processor.py:186} INFO - Started process (PID=627) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:25:04.259+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:25:04.263+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:25:04.262+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:25:04.306+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:25:04.352+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:25:04.351+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:25:04.389+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:25:04.388+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:25:04.423+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.175 seconds
+[2026-04-29T05:25:34.836+0000] {processor.py:186} INFO - Started process (PID=643) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:25:34.837+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:25:34.841+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:25:34.840+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:25:34.880+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:25:34.928+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:25:34.927+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:25:34.969+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:25:34.969+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:25:34.999+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.174 seconds
+[2026-04-29T05:26:05.412+0000] {processor.py:186} INFO - Started process (PID=659) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:26:05.413+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:26:05.417+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:26:05.417+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:26:05.460+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:26:05.506+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:26:05.506+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:26:05.554+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:26:05.553+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:26:05.592+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.191 seconds
+[2026-04-29T05:26:35.924+0000] {processor.py:186} INFO - Started process (PID=675) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:26:35.926+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:26:35.930+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:26:35.929+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:26:35.969+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:26:36.011+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:26:36.011+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:26:36.049+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:26:36.049+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:26:36.079+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.163 seconds
+[2026-04-29T05:27:06.469+0000] {processor.py:186} INFO - Started process (PID=691) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:27:06.471+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:27:06.475+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:27:06.474+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:27:06.517+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:27:06.567+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:27:06.567+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:27:06.606+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:27:06.606+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:27:06.635+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.176 seconds
+[2026-04-29T05:27:36.951+0000] {processor.py:186} INFO - Started process (PID=710) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:27:36.953+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:27:36.957+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:27:36.957+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:27:37.005+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:27:37.058+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:27:37.057+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:27:37.099+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:27:37.099+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:27:37.132+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.192 seconds
+[2026-04-29T05:28:07.498+0000] {processor.py:186} INFO - Started process (PID=726) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:28:07.500+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:28:07.504+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:28:07.504+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:28:07.547+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:28:07.597+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:28:07.597+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:28:07.645+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:28:07.644+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:28:07.683+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.195 seconds
+[2026-04-29T05:28:38.091+0000] {processor.py:186} INFO - Started process (PID=742) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:28:38.093+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:28:38.099+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:28:38.099+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:28:38.152+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:28:38.204+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:28:38.203+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:28:38.243+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:28:38.242+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:28:38.274+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.203 seconds
+[2026-04-29T05:29:08.604+0000] {processor.py:186} INFO - Started process (PID=758) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:29:08.606+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:29:08.611+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:29:08.610+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:29:08.655+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:29:08.709+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:29:08.709+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:29:08.753+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:29:08.752+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:29:08.783+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.190 seconds
+[2026-04-29T05:29:39.178+0000] {processor.py:186} INFO - Started process (PID=774) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:29:39.180+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:29:39.186+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:29:39.185+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:29:39.245+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:29:39.302+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:29:39.301+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:29:39.353+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:29:39.352+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:29:39.390+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.224 seconds
+[2026-04-29T05:30:09.793+0000] {processor.py:186} INFO - Started process (PID=790) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:30:09.794+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:30:09.798+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:30:09.798+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:30:09.838+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:30:09.885+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:30:09.884+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:30:09.922+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:30:09.921+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:30:09.951+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.169 seconds
+[2026-04-29T05:30:40.454+0000] {processor.py:186} INFO - Started process (PID=806) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:30:40.456+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:30:40.461+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:30:40.460+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:30:40.506+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:30:40.553+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:30:40.553+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:30:40.599+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:30:40.598+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:30:40.631+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.189 seconds
+[2026-04-29T05:31:10.983+0000] {processor.py:186} INFO - Started process (PID=822) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:31:10.984+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:31:10.990+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:31:10.989+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:31:11.037+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:31:11.086+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:31:11.085+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:31:11.129+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:31:11.129+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:31:11.164+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.194 seconds
+[2026-04-29T05:31:41.534+0000] {processor.py:186} INFO - Started process (PID=838) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:31:41.536+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:31:41.541+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:31:41.540+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:31:41.580+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:31:41.626+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:31:41.626+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:31:41.664+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:31:41.663+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:31:42.032+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.508 seconds
+[2026-04-29T05:32:12.229+0000] {processor.py:186} INFO - Started process (PID=856) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:32:12.230+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:32:12.233+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:32:12.233+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:32:12.269+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:32:12.320+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:32:12.320+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:32:12.388+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:32:12.388+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:32:12.403+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.236 seconds
+[2026-04-29T05:32:42.747+0000] {processor.py:186} INFO - Started process (PID=872) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:32:42.749+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:32:42.755+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:32:42.754+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:32:42.804+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:32:42.854+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:32:42.854+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:32:42.893+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:32:42.893+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:32:42.946+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.209 seconds
+[2026-04-29T05:33:13.051+0000] {processor.py:186} INFO - Started process (PID=886) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:33:13.053+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:33:13.057+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:33:13.057+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:33:13.103+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:33:13.154+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:33:13.154+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:33:13.198+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:33:13.198+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:33:13.230+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.189 seconds
+[2026-04-29T05:33:43.580+0000] {processor.py:186} INFO - Started process (PID=902) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:33:43.581+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:33:43.585+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:33:43.585+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:33:43.626+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:33:43.678+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:33:43.677+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:33:43.726+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:33:43.725+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:33:43.758+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.189 seconds
+[2026-04-29T05:34:14.226+0000] {processor.py:186} INFO - Started process (PID=918) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:34:14.227+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:34:14.231+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:34:14.231+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:34:14.271+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:34:14.322+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:34:14.322+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:34:14.360+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:34:14.360+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:34:14.390+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.175 seconds
+[2026-04-29T05:34:44.798+0000] {processor.py:186} INFO - Started process (PID=934) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:34:44.800+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:34:44.807+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:34:44.806+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:34:44.858+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:34:44.907+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:34:44.907+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:34:44.946+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:34:44.946+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:34:44.979+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.196 seconds
+[2026-04-29T05:35:15.372+0000] {processor.py:186} INFO - Started process (PID=950) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:35:15.374+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:35:15.379+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:35:15.378+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:35:15.422+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:35:15.465+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:35:15.464+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:35:15.512+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:35:15.512+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:35:15.546+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.184 seconds
+[2026-04-29T05:35:45.957+0000] {processor.py:186} INFO - Started process (PID=966) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:35:45.958+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:35:45.962+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:35:45.962+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:35:46.001+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:35:46.042+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:35:46.041+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:35:46.084+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:35:46.084+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:35:46.114+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.169 seconds
+[2026-04-29T05:36:16.449+0000] {processor.py:186} INFO - Started process (PID=982) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:36:16.451+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:36:16.455+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:36:16.454+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:36:16.496+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:36:16.538+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:36:16.537+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:36:16.573+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:36:16.573+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:36:16.602+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.164 seconds
+[2026-04-29T05:36:46.954+0000] {processor.py:186} INFO - Started process (PID=998) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:36:46.955+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:36:46.960+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:36:46.959+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:36:47.004+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:36:47.055+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:36:47.055+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:36:47.110+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:36:47.110+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:36:47.149+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.206 seconds
+[2026-04-29T05:37:17.419+0000] {processor.py:186} INFO - Started process (PID=1014) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:37:17.421+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:37:17.426+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:37:17.425+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:37:17.473+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:37:17.520+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:37:17.519+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:37:17.558+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:37:17.558+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:37:17.590+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.183 seconds
+[2026-04-29T05:37:48.006+0000] {processor.py:186} INFO - Started process (PID=1030) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:37:48.008+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:37:48.014+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:37:48.013+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:37:48.055+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:37:48.105+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:37:48.104+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:37:48.149+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:37:48.149+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:37:48.180+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.185 seconds
+[2026-04-29T05:38:18.505+0000] {processor.py:186} INFO - Started process (PID=1046) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:38:18.507+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:38:18.511+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:38:18.511+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:38:18.551+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:38:18.602+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:38:18.601+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:38:18.648+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:38:18.648+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:38:18.683+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.188 seconds
+[2026-04-29T05:38:49.064+0000] {processor.py:186} INFO - Started process (PID=1062) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:38:49.065+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:38:49.070+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:38:49.070+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:38:49.110+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:38:49.158+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:38:49.157+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:38:49.199+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:38:49.199+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:38:49.236+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.183 seconds
+[2026-04-29T05:39:19.657+0000] {processor.py:186} INFO - Started process (PID=1078) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:39:19.658+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:39:19.663+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:39:19.662+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:39:19.701+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:39:19.747+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:39:19.746+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:39:19.787+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:39:19.786+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:39:19.822+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.178 seconds
+[2026-04-29T05:39:50.016+0000] {processor.py:186} INFO - Started process (PID=1094) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:39:50.018+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:39:50.021+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:39:50.021+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:39:50.059+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:39:50.106+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:39:50.105+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:39:50.146+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:39:50.145+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:39:50.178+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.173 seconds
+[2026-04-29T05:40:20.564+0000] {processor.py:186} INFO - Started process (PID=1110) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:40:20.565+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:40:20.570+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:40:20.569+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:40:20.612+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:40:20.657+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:40:20.656+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:40:20.699+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:40:20.699+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:40:21.069+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.516 seconds
+[2026-04-29T05:40:51.223+0000] {processor.py:186} INFO - Started process (PID=1126) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:40:51.225+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:40:51.231+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:40:51.230+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:40:51.282+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:40:51.352+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:40:51.351+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:40:51.411+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:40:51.411+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:40:51.472+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.262 seconds
+[2026-04-29T05:41:21.851+0000] {processor.py:186} INFO - Started process (PID=1148) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:41:21.854+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:41:21.861+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:41:21.860+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:41:21.937+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:41:21.994+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:41:21.994+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:41:22.033+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:41:22.033+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:41:22.065+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.234 seconds
+[2026-04-29T05:41:52.422+0000] {processor.py:186} INFO - Started process (PID=1164) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:41:52.424+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:41:52.428+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:41:52.428+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:41:52.466+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:41:52.513+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:41:52.513+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:41:52.554+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:41:52.554+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:41:52.585+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.173 seconds
+[2026-04-29T05:42:23.043+0000] {processor.py:186} INFO - Started process (PID=1180) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:42:23.045+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:42:23.050+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:42:23.049+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:42:23.093+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:42:23.150+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:42:23.149+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:42:23.199+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:42:23.198+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:42:23.233+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.205 seconds
+[2026-04-29T05:42:53.586+0000] {processor.py:186} INFO - Started process (PID=1197) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:42:53.588+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:42:53.592+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:42:53.591+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:42:53.631+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:42:53.673+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:42:53.673+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:42:53.710+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:42:53.710+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:42:53.739+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.165 seconds
+[2026-04-29T05:43:24.111+0000] {processor.py:186} INFO - Started process (PID=1213) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:43:24.113+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:43:24.116+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:43:24.116+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:43:24.156+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:43:24.204+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:43:24.203+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:43:24.246+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:43:24.245+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:43:24.274+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.171 seconds
+[2026-04-29T05:43:54.634+0000] {processor.py:186} INFO - Started process (PID=1229) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:43:54.636+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:43:54.640+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:43:54.639+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:43:54.683+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:43:54.737+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:43:54.737+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:43:54.779+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:43:54.778+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:43:54.808+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.186 seconds
+[2026-04-29T05:44:25.150+0000] {processor.py:186} INFO - Started process (PID=1245) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:44:25.152+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:44:25.157+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:44:25.156+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:44:25.201+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:44:25.253+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:44:25.252+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:44:25.292+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:44:25.292+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:44:25.322+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.183 seconds
+[2026-04-29T05:44:55.503+0000] {processor.py:186} INFO - Started process (PID=1261) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:44:55.505+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:44:55.510+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:44:55.510+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:44:55.550+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:44:55.596+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:44:55.596+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:44:55.636+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:44:55.636+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:44:55.663+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.171 seconds
+[2026-04-29T05:45:26.037+0000] {processor.py:186} INFO - Started process (PID=1277) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:45:26.039+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:45:26.043+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:45:26.042+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:45:26.079+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:45:26.123+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:45:26.123+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:45:26.162+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:45:26.162+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:45:26.191+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.163 seconds
+[2026-04-29T05:45:56.642+0000] {processor.py:186} INFO - Started process (PID=1293) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:45:56.644+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:45:56.648+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:45:56.648+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:45:56.693+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:45:56.750+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:45:56.750+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:45:56.791+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:45:56.791+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:45:57.163+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.536 seconds
+[2026-04-29T05:46:27.481+0000] {processor.py:186} INFO - Started process (PID=1311) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:46:27.483+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:46:27.487+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:46:27.486+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:46:27.529+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:46:27.579+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:46:27.579+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:46:27.618+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:46:27.618+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:46:27.646+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.175 seconds
+[2026-04-29T05:46:57.794+0000] {processor.py:186} INFO - Started process (PID=1325) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:46:57.796+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:46:57.803+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:46:57.802+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:46:57.848+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:46:57.897+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:46:57.897+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:46:57.938+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:46:57.937+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:46:57.968+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.186 seconds
+[2026-04-29T05:47:28.308+0000] {processor.py:186} INFO - Started process (PID=1341) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:47:28.310+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:47:28.315+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:47:28.314+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:47:28.358+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:47:28.401+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:47:28.401+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:47:28.443+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:47:28.442+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:47:28.471+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.172 seconds
+[2026-04-29T05:47:58.855+0000] {processor.py:186} INFO - Started process (PID=1357) to work on /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:47:58.857+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_mart_dag.py for tasks to queue
+[2026-04-29T05:47:58.861+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:47:58.861+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:47:58.903+0000] {processor.py:925} INFO - DAG(s) 'create_analytics_mart' retrieved from /opt/airflow/dags/create_mart_dag.py
+[2026-04-29T05:47:58.951+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:47:58.950+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-29T05:47:58.990+0000] {logging_mixin.py:190} INFO - [2026-04-29T05:47:58.990+0000] {dag.py:4180} INFO - Setting next_dagrun for create_analytics_mart to 2026-04-28 02:00:00+00:00, run_after=2026-04-29 02:00:00+00:00
+[2026-04-29T05:47:59.021+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_mart_dag.py took 0.175 seconds

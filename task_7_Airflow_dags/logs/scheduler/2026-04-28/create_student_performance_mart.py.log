@@ -714,3 +714,31 @@
 [2026-04-28T18:36:54.794+0000] {logging_mixin.py:190} INFO - [2026-04-28T18:36:54.794+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2026-04-28T18:36:54.808+0000] {logging_mixin.py:190} INFO - [2026-04-28T18:36:54.807+0000] {dag.py:4180} INFO - Setting next_dagrun for create_student_performance_mart to None, run_after=None
 [2026-04-28T18:36:54.848+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_student_performance_mart.py took 0.114 seconds
+[2026-04-28T18:37:25.164+0000] {processor.py:186} INFO - Started process (PID=1198) to work on /opt/airflow/dags/create_student_performance_mart.py
+[2026-04-28T18:37:25.166+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_student_performance_mart.py for tasks to queue
+[2026-04-28T18:37:25.169+0000] {logging_mixin.py:190} INFO - [2026-04-28T18:37:25.169+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_student_performance_mart.py
+[2026-04-28T18:37:25.190+0000] {processor.py:925} INFO - DAG(s) 'create_student_performance_mart' retrieved from /opt/airflow/dags/create_student_performance_mart.py
+[2026-04-28T18:37:25.221+0000] {logging_mixin.py:190} INFO - [2026-04-28T18:37:25.221+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-28T18:37:25.414+0000] {logging_mixin.py:190} INFO - [2026-04-28T18:37:25.414+0000] {dag.py:4180} INFO - Setting next_dagrun for create_student_performance_mart to None, run_after=None
+[2026-04-28T18:37:25.451+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_student_performance_mart.py took 0.294 seconds
+[2026-04-28T18:37:55.766+0000] {processor.py:186} INFO - Started process (PID=1214) to work on /opt/airflow/dags/create_student_performance_mart.py
+[2026-04-28T18:37:55.767+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_student_performance_mart.py for tasks to queue
+[2026-04-28T18:37:55.769+0000] {logging_mixin.py:190} INFO - [2026-04-28T18:37:55.769+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_student_performance_mart.py
+[2026-04-28T18:37:55.791+0000] {processor.py:925} INFO - DAG(s) 'create_student_performance_mart' retrieved from /opt/airflow/dags/create_student_performance_mart.py
+[2026-04-28T18:37:55.821+0000] {logging_mixin.py:190} INFO - [2026-04-28T18:37:55.821+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-28T18:37:55.839+0000] {logging_mixin.py:190} INFO - [2026-04-28T18:37:55.838+0000] {dag.py:4180} INFO - Setting next_dagrun for create_student_performance_mart to None, run_after=None
+[2026-04-28T18:37:55.861+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_student_performance_mart.py took 0.101 seconds
+[2026-04-28T18:38:26.195+0000] {processor.py:186} INFO - Started process (PID=1230) to work on /opt/airflow/dags/create_student_performance_mart.py
+[2026-04-28T18:38:26.196+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_student_performance_mart.py for tasks to queue
+[2026-04-28T18:38:26.199+0000] {logging_mixin.py:190} INFO - [2026-04-28T18:38:26.198+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_student_performance_mart.py
+[2026-04-28T18:38:26.219+0000] {processor.py:925} INFO - DAG(s) 'create_student_performance_mart' retrieved from /opt/airflow/dags/create_student_performance_mart.py
+[2026-04-28T18:38:26.253+0000] {logging_mixin.py:190} INFO - [2026-04-28T18:38:26.253+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-28T18:38:26.271+0000] {logging_mixin.py:190} INFO - [2026-04-28T18:38:26.270+0000] {dag.py:4180} INFO - Setting next_dagrun for create_student_performance_mart to None, run_after=None
+[2026-04-28T18:38:26.313+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_student_performance_mart.py took 0.125 seconds
+[2026-04-28T18:38:56.649+0000] {processor.py:186} INFO - Started process (PID=1246) to work on /opt/airflow/dags/create_student_performance_mart.py
+[2026-04-28T18:38:56.667+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_student_performance_mart.py for tasks to queue
+[2026-04-28T18:38:56.671+0000] {logging_mixin.py:190} INFO - [2026-04-28T18:38:56.670+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_student_performance_mart.py
+[2026-04-28T18:38:56.692+0000] {processor.py:925} INFO - DAG(s) 'create_student_performance_mart' retrieved from /opt/airflow/dags/create_student_performance_mart.py
+[2026-04-28T18:38:56.725+0000] {logging_mixin.py:190} INFO - [2026-04-28T18:38:56.725+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-04-28T18:38:56.742+0000] {logging_mixin.py:190} INFO - [2026-04-28T18:38:56.741+0000] {dag.py:4180} INFO - Setting next_dagrun for create_student_performance_mart to None, run_after=None
+[2026-04-28T18:38:56.765+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_student_performance_mart.py took 0.122 seconds
