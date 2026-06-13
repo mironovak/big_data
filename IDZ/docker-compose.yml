@@ -1,0 +1,104 @@
+version: '3.8'
+
+# Описываем общие именованные разделы для хранения служебных данных Airflow и Postgres
+volumes:
+  postgres_data:
+  airflow_logs:
+
+networks:
+  shop_network:
+    driver: bridge
+
+services:
+  # ---------------------------------------------------------------------------
+  # СУБД POSTGRESQL (Хранилище сырых данных и витрин)
+  # ---------------------------------------------------------------------------
+  postgres:
+    image: postgres:15-alpine
+    container_name: bigdata_pg
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "5439:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - shop_network
+    healthcheck: # Проверка готовности СУБД для Airflow
+      test: ["CMD-SHELL", "pg_isready -U postgres -d shop_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # ---------------------------------------------------------------------------
+  # ИНИЦИАЛИЗАЦИЯ AIRFLOW (Запускается один раз для подготовки БД Airflow)
+  # ---------------------------------------------------------------------------
+  airflow-init:
+    image: apache/airflow:2.7.1-python3.10
+    container_name: bigdata_airflow_init
+    environment:
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/airflow_metadata
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+    depends_on:
+      postgres:
+        condition: service_healthy
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        # Создаем служебную БД для метаданных самого Airflow внутри контейнера Postgres
+        PGPASSWORD=${POSTGRES_PASSWORD} psql -h postgres -U ${POSTGRES_USER} -c "CREATE DATABASE airflow_metadata;" || true
+        # Инициализируем таблицы Airflow и создаем учетку админа
+        airflow db init
+        airflow users create --username admin --password admin --firstname Admin --lastname Admin --role Admin --email admin@example.com
+    networks:
+      - shop_network
+
+  # ---------------------------------------------------------------------------
+  # ОРКЕСТРАТОР AIRFLOW (Веб-интерфейс, Шедулер и Воркер в одном флаконе)
+  # ---------------------------------------------------------------------------
+  airflow:
+    image: apache/airflow:2.7.1-python3.10
+    container_name: bigdata_airflow
+    restart: always
+    environment:
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/airflow_metadata
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    ports:
+      - "8085:8080"
+    # Монтируем наши локальные папки внутрь контейнера по путям Airflow
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./scripts:/opt/airflow/scripts
+      - ./data:/opt/airflow/data
+      - airflow_logs:/opt/airflow/logs
+    depends_on:
+      postgres:
+        condition: service_healthy
+    # Перед стартом Airflow доустанавливаем библиотеки во внутренний Python контейнера
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        pip install pandas faker sqlalchemy psycopg2-binary python-dotenv
+        airflow standalone
+    networks:
+      - shop_network
+
+  # ---------------------------------------------------------------------------
+  # BI-СИСТЕМА METABASE (Для создания красивых дашбордов)
+  # ---------------------------------------------------------------------------
+  metabase:
+    image: metabase/metabase:v0.46.6
+    container_name: bigdata_metabase
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - shop_network

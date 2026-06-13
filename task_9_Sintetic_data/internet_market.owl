@@ -39,7 +39,7 @@
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
 </owl:DatatypeProperty>
 
-<owl:DatatypeProperty rdf:about="#имеет_цена">
+<owl:DatatypeProperty rdf:about="#имеет_цену">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
   <rdfs:domain rdf:resource="#Товар"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
@@ -55,12 +55,6 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
   <rdfs:domain rdf:resource="#Отзыв"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-</owl:DatatypeProperty>
-
-<owl:DatatypeProperty rdf:about="#имеет_цену">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-  <rdfs:domain rdf:resource="#Товар"/>
-  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
 </owl:DatatypeProperty>
 
 <owl:Class rdf:about="#Покупатель">
@@ -135,62 +129,52 @@
 
 <owl:NamedIndividual rdf:about="#Товар_ID_1">
   <rdf:type rdf:resource="#Товар"/>
-  <имеет_цена rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">37155.06</имеет_цена>
-  <имеет_цену rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">37155.06</имеет_цену>
+  <имеет_цену rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13968.96</имеет_цену>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Товар_ID_2">
   <rdf:type rdf:resource="#Товар"/>
-  <имеет_цена rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36902.62</имеет_цена>
-  <имеет_цену rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36902.62</имеет_цену>
+  <имеет_цену rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">37111.19</имеет_цену>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Товар_ID_3">
   <rdf:type rdf:resource="#Товар"/>
-  <имеет_цена rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">29647.48</имеет_цена>
-  <имеет_цену rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">29647.48</имеет_цену>
+  <имеет_цену rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1879.6</имеет_цену>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Товар_ID_4">
   <rdf:type rdf:resource="#Товар"/>
-  <имеет_цена rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11166.31</имеет_цена>
-  <имеет_цену rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11166.31</имеет_цену>
+  <имеет_цену rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30220.33</имеет_цену>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Товар_ID_5">
   <rdf:type rdf:resource="#Товар"/>
-  <имеет_цена rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28193.88</имеет_цена>
-  <имеет_цену rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28193.88</имеет_цену>
+  <имеет_цену rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11255.9</имеет_цену>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Товар_ID_6">
   <rdf:type rdf:resource="#Товар"/>
-  <имеет_цена rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11255.9</имеет_цена>
-  <имеет_цену rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11255.9</имеет_цену>
+  <имеет_цену rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40349.22</имеет_цену>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Товар_ID_7">
   <rdf:type rdf:resource="#Товар"/>
-  <имеет_цена rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">43504.23</имеет_цена>
-  <имеет_цену rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">43504.23</имеет_цену>
+  <имеет_цену rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8027.33</имеет_цену>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Товар_ID_8">
   <rdf:type rdf:resource="#Товар"/>
-  <имеет_цена rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">21303.94</имеет_цена>
-  <имеет_цену rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">21303.94</имеет_цену>
+  <имеет_цену rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19182.39</имеет_цену>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Товар_ID_9">
   <rdf:type rdf:resource="#Товар"/>
-  <имеет_цена rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">47873.49</имеет_цена>
-  <имеет_цену rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">47873.49</имеет_цену>
+  <имеет_цену rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40414.28</имеет_цену>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Товар_ID_10">
   <rdf:type rdf:resource="#Товар"/>
-  <имеет_цена rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19182.39</имеет_цена>
-  <имеет_цену rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19182.39</имеет_цену>
+  <имеет_цену rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48663.85</имеет_цену>
 </owl:NamedIndividual>
 
 
